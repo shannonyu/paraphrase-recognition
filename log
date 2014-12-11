@@ -1,0 +1,68 @@
+
+Options: -I 15 
+
+Random forest of 15 trees, each constructed while considering 8 random features.
+Out of bag error: 0.2979
+
+
+
+Time taken to build model: 0.74 seconds
+Time taken to test model on training data: 0.25 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3856               99.484  %
+Incorrectly Classified Instances        20                0.516  %
+Kappa statistic                          0.9882
+Mean absolute error                      0.1222
+Root mean squared error                  0.1684
+Relative absolute error                 27.844  %
+Root relative squared error             35.9427 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      85.7714 %
+Total Number of Instances             3876     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.987    0.001    0.998      0.987    0.992      0.988    1.000     1.000     0
+                 0.999    0.013    0.994      0.999    0.996      0.988    1.000     1.000     1
+Weighted Avg.    0.995    0.009    0.995      0.995    0.995      0.988    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1244   17 |    a = 0
+    3 2612 |    b = 1
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         156               78      %
+Incorrectly Classified Instances        44               22      %
+Kappa statistic                          0.4717
+Mean absolute error                      0.322 
+Root mean squared error                  0.404 
+Relative absolute error                 74.2514 %
+Root relative squared error             87.2998 %
+Coverage of cases (0.95 level)          99.5    %
+Mean rel. region size (0.95 level)      92      %
+Total Number of Instances              200     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.597    0.138    0.661      0.597    0.627      0.473    0.805     0.610     0
+                 0.862    0.403    0.826      0.862    0.844      0.473    0.805     0.892     1
+Weighted Avg.    0.780    0.321    0.775      0.780    0.777      0.473    0.805     0.804     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  37  25 |   a = 0
+  19 119 |   b = 1
+
